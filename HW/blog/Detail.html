@@ -1,0 +1,49 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+</head>
+
+
+<body>
+<h1 align="center">详细信息</h1>
+<form name="form1" method="post" action="">
+  <div align="center">
+    <table width="700" height="96" border="1">
+      <tr>
+        <td width="87">ISBN</td>
+        <td width="138">Title</td>
+        <td width="61">AuthorID</td>
+        <td width="129">Publisher</td>
+        <td width="166">PublishDate</td>
+        <td width="79">Price</td>
+      </tr>
+      <tr>
+        <td>{{ detail_book.ISBN }}</td>
+        <td>{{ detail_book.Title }}</td>
+        <td>{{ detail_book.AuthorID.Name }}</td>
+        <td>{{ detail_book.Publisher }}</td>
+        <td>{{ detail_book.PublishDate }}</td>
+        <td>{{ detail_book.Price }}</td>
+      </tr>
+      </table>  
+    <table width="700" height="91" border="1">
+      <tr>
+        <td width="152">AuthorID</td>
+        <td width="187">Name</td>
+        <td width="184">Age</td>
+        <td width="149">Country</td>
+      </tr>
+      <tr>
+      <td>{{ detail_author.AuthorID }}</td>
+      <td>{{ detail_author.Name }}</td>
+      <td>{{ detail_author.Age }}</td>
+      <td>{{ detail_author.Country }}</td>
+    </tr>
+      </table>
+  </div>
+  <p align="center"><a href="/AllInformation/">返回</a></p>
+</form>
+<p>&nbsp;</p>
+</body>
+</html>
