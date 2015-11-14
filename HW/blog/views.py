@@ -16,7 +16,7 @@ def add_book(request):
         new_book = Book(
            ISBN=post['ISBN'],
            Title=post['Title'],
-           AuthorID=author,
+           #AuthorID=author,
            Publisher=post['Publisher'],
            PublishDate=post['PublishDate'],
            Price=post['Price'],
