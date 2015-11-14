@@ -12,4 +12,4 @@ class Book(models.Model):
     AuthorID=models.ForeignKey(Author)
     Publisher=models.CharField(max_length = 50)
     PublishDate=models.DateField()
-    #Price=models.CharField(max_length = 20)
+    Price=models.CharField(max_length = 20)
